@@ -2,11 +2,18 @@
 Projeto desenvolvido por estudantes do 1º semestre de Análise e Desenvolvimento de Sistemas. Realiza operações matemáticas básicas e avançadas usando linguagem C.
 
 Funcionalidades:
-- Soma, subtração, multiplicação e divisão
-- Potenciação, radiciação, raízes
-- Trigonometria, logaritmos, derivadas
-- Fatorial, mantissa/expoente, funções hiperbólicas
-  
+
+- Operações básicas
+- Funções matemáticas
+- Funções trigonométricas
+- Funções hiperbólicas
+- Logaritmos
+- Outras operações
+- Derivada simples de função polinomial
+- Separação de mantissa e expoente (frexp)
+- Diferença positiva entre dois valores
+- Resto de divisão entre dois inteiros
+
 Tecnologias:
 - Linguagem C
 - Compilador OnlineGDB
