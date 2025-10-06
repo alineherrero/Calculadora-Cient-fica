@@ -29,6 +29,12 @@ Raiz Quadrada
 Entrada: 25
 Saída:5
 
+Integrantes:
+Aline Herrero
+Jamilly Duda
+Syang De Battisti
+Luisangel
+
 Informações adicionais:
 Código comentado para facilitar o entendimento.
 Validações incluídas para evitar erros. 
