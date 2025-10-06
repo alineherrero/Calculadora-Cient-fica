@@ -17,7 +17,7 @@ int main()
     // mostrando as opções para o usuário
     double array[4]; // Armazena os dois números
     double resultado;
-    printf("Bem vindo a calculadora em cientifica!\n");
+    printf("Bem vindo a Calculadora Cientifica!\n");
     printf("Escolha a operacao que deseja realizar:\n");
     printf("1 - Adicao\n");
     printf("2 - Subtracao\n");
@@ -363,3 +363,4 @@ switch (opcao) {
         return 0;
     }
 }
+
