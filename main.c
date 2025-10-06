@@ -57,18 +57,16 @@ int main()
     // tenta entender algo como "avalie(variável){*caso x: *faça isso - *pare; *case y: *faça aquilo - *pare;}"
     // esse "pare" na minha abstração seria o "break;" no final de cada caso, que é necessário
     // coloquei um * pra tentar sinalizar onde está o exemplo que eu abstraí
-    //  Entrada dos dois números
-    printf("Digite 4 números (inteiros ou decimais):\n");
-    for (int i = 0; i < 4; i++)
-    {
-        printf("Número %d: ", i + 1);
-        scanf("%lf", &array[i]); // %lf para double
-    }
-
+    //  Entrada dos dois núme
     // Switch-case para escolher a operação
-    switch (opcao)
-{
+switch (opcao) {
     case 1: // Soma
+        printf("Digite 4 números (inteiros ou decimais):\n");
+        for (int i = 0; i < 4; i++) {
+            printf("Número %d: ", i + 1);
+            scanf("%lf", &array[i]);
+        }
+
         resultado = 0;
         for (int i = 0; i < 4; i++) {
             resultado += array[i];
@@ -77,6 +75,12 @@ int main()
         break;
 
     case 2: // Subtração
+        printf("Digite 4 números (inteiros ou decimais):\n");
+        for (int i = 0; i < 4; i++) {
+            printf("Número %d: ", i + 1);
+            scanf("%lf", &array[i]);
+        }
+
         resultado = array[0];
         for (int i = 1; i < 4; i++) {
             resultado -= array[i];
@@ -85,6 +89,12 @@ int main()
         break;
 
     case 3: // Multiplicação
+        printf("Digite 4 números (inteiros ou decimais):\n");
+        for (int i = 0; i < 4; i++) {
+            printf("Número %d: ", i + 1);
+            scanf("%lf", &array[i]);
+        }
+
         resultado = 1;
         for (int i = 0; i < 4; i++) {
             resultado *= array[i];
@@ -93,13 +103,24 @@ int main()
         break;
 
     case 4: // Divisão
-        if (array[1] != 0) {
-            resultado = array[0] / array[1];
-            printf("Resultado da divisão: %.2lf\n", resultado);
-        } else {
-            printf("Erro: divisão por zero não é permitida.\n");
+        printf("Digite 4 números (inteiros ou decimais):\n");
+        for (int i = 0; i < 4; i++) {
+            printf("Número %d: ", i + 1);
+            scanf("%lf", &array[i]);
         }
+
+        resultado = array[0];
+        for (int i = 1; i < 4; i++) {
+            if (array[i] != 0) {
+                resultado /= array[i];
+            } else {
+                printf("Erro: divisão por zero não é permitida.\n");
+                return 1;
+            }
+        }
+        printf("Resultado da divisão: %.2lf\n", resultado);
         break;
+        
     case 5: // POTENCIAÇÃO
         // pedindo e armazenando valores em variáveis conforme explicado
         printf("Digite a base:\n");
@@ -292,7 +313,7 @@ int main()
         printf("Digite o valor do divisor: ");
         scanf("%d", &n3);
         res = n % n3;
-        printf("O resto da divisão de %d por %d é: %d.", n, n3, res);
+        printf("O resto da divisão de %d por %d é: %.2lf\n.", n, n3, res);
         break;
     case 21:
         printf("Digite o valor: ");
@@ -335,14 +356,6 @@ int main()
         // daí tá sempre dando 1
         // me ajudem a resolver isto por favor <2
         printf("O tangente hiperbólico de %lf é: %lf", n2, r2);
-        break;
-    case 666: // EASTER EGG SÓ PRA QUEM LEU O CÓDIGO <2 coração imperfeito
-        printf("!--! VIVA O PUNK ROCK ! |m|_    _|m|  ! VIVA O PUNK ROCK !--!");
-        printf("---A CRÔNICA DOS SEIS HOMENS---");
-        printf("QUANDO SE ENCONTRAM DOIS HOMENS QUE BUSCAM A PAZ, ELES JAMAIS LUTAM ENTRE SI.");
-        printf("QUANDO UM DESTES DESEJA LUTAR, CABE AO OUTRO BUSCAR A PAZ.");
-        printf("QUANDO AMBOS DECIDEM PELO CONFLITO, SÓ RESTA LUTAR.");
-        printf("ESCOLHA PELO QUE LUTA.");
         break;
     default:
         printf("Opcao invalida.\n");
